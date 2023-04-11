@@ -91,6 +91,10 @@ body{
     text-align:justify;
 }
 
+#tthew {
+  text-align: center;
+}
+
   .empty2::-webkit-scrollbar,
   .container2::-webkit-scrollbar,
   .header::-webkit-scrollbar,
