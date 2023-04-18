@@ -53,6 +53,7 @@ body{
     color: red;
     /* flex: 1; */
     font-size: 3rem !important;
+    width: min-content !important;
 }
 
     .empty2{
