@@ -1,69 +1,121 @@
 
-
 body{
     background-color: cornsilk;
     
 }
 
-.container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  #image_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-  }
-  
-  #album_art {
-    position: sticky;
-    width: 50%;
-    height: auto;
+/* form {
+  display: flex;
+  width: clamp(200px, 50%, 1000px);
+}
+
+@media (max-width: 768px) {
+  form {
     display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
   }
+  #image_container img {
+    width: 300px;
+  }
+} */
+
+.container {
+  /* flex: 1 0 130px; */
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   
+  /* transform: translate(-50%, -50%); */
+}
 
-  .container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 39%;
-    max-height: 100vh;
-    font-size: 58px;
-    position: absolute;
-    top: 50%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    overflow-y: scroll;
-    margin: 20px;
-    padding: 20px;
-    z-index: 2;
-  }
+#image_container img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
+#image_container {
+  flex: 1 0 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 39%;
+  max-height: 100vh;
+  font-size: 58px;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  margin: 20px;
+  /* padding: 20px; */
+  z-index: 2;
+}
+
+/* #image_container {
+  position: absolute;
+  flex: 1;
+  flex: 1 0 130px;
+  position: sticky;
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  max-height: 50%;
+  align-items: center;
+} */
+
+
+#image_box {
+  flex: 1 0 130px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 39%;
+  max-height: 100vh;
+  font-size: 58px;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  margin: 20px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.album_art {
+  /* height: auto; */
+  flex: 1;
+  flex: 1 0 130px;
+  position: sticky;  
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
   .header {
+    flex: 1 0 130px;
     color: cornsilk;
-    flex: 1;
-    font-size: 28px;
-    margin-top: 290vh;
+    font-size: clamp(0.005rem, 2vw, 3rem);
+    margin-top: 32vh;
+    align-items: center;
+    text-align: center;
   }
 
   .music {
+    /* flex: 1 1 100%; */
     color: cornsilk;
     flex: 1;
-    margin-top: 70vh;
-    font-size: 60px;
+    margin-top: 65vh;
+    font-size: clamp(0.1rem, 4vw, 5rem);
     align-items: center;
     text-align: center;
+    
   }
 
   .to{
@@ -82,12 +134,13 @@ body{
   } */
 
   .parag {
+    flex: 1 1 130px;
     color: cornsilk;
-    flex: 2;
-    font-size: 40px;
-    height: 400px;
+    max-width:max-content;
+    flex: 1;
+    font-size: clamp(1rem, 6.2vw, 80rem);
+    /* height: 400px; */
     margin-top: 60vh; 
-    margin-right: 2vh;
     text-align:justify;
 }
 
@@ -96,7 +149,8 @@ body{
 }
 
   .empty2::-webkit-scrollbar,
-  .container2::-webkit-scrollbar,
+  #image_box::-webkit-scrollbar,
+  #image_container::-webkit-scrollbar,
   .header::-webkit-scrollbar,
   .parag::-webkit-scrollbar 
   {
@@ -112,6 +166,7 @@ body{
     height: 250px; 
     margin-top: 80vh;
     font-size: 70px;
+    flex: 3;
     color: cornsilk;
     font-style: oblique;
   overflow-y: scroll;
@@ -126,7 +181,7 @@ body{
   
   /* visited link */
   a:visited {
-    color: cornsilk;
+    color: mediumaquamarine;
   }
   
   /* mouse over link */
@@ -141,37 +196,5 @@ body{
     color: yellow;
   } 
   
-  /* #header{
-    max-width: 40%;
-    max-height: 800px;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow-y: scroll;
-    margin: 20px;
-    padding: 20px;
-    z-index: 2;
-    color: cornsilk;
-  } */
 
-
-  /* span {
-    font-size: 78px;
-    text-align: right;
-  } */
-
-  /* .parag {
-    
-    max-height: 800px;
-    font-size: 58px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 20px;
-    padding: 20px;
-    z-index: 2;
-    color: cornsilk;
-  } */
+  
