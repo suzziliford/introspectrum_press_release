@@ -118,7 +118,7 @@ body{
   .empty2{
     /* flex: 1; */
     margin-top: 30rem;
-    margin-bottom: 30rem;
+    margin-bottom: 180px;
     font-size: 70px;
     flex: 1 1 130px;
     color: cornsilk; 
@@ -180,8 +180,11 @@ body{
     }
   
     #image_container {
-      min-width: 318px;
-      left: 44% !important;
+      min-width: 318px !important;
+      /* left: 44% !important; */
+      margin: 0;
+      padding: 0%;
+      border: 0%;
       
     }
   
@@ -190,8 +193,11 @@ body{
     }
   
     #image_box {
-      min-width: 290px !important;
-      left: 44% !important;
+      min-width: 310px !important;
+      left: 49% !important;
+      margin: 0;
+      padding: 0%;
+      border: 0%;
       
     }
   
@@ -208,13 +214,13 @@ body{
     .parag {
       flex: 1;
       font-size: 3rem !important;
-      max-width: 19rem !important;
+      max-width: fit-content !important;
   }
   
     .empty2{
       font-size: 3rem !important;
       margin-top: 19rem !important;
-      /* margin-bottom: 50em !important; */
+      margin-bottom: 150px !important;
     }
   
   }
@@ -223,12 +229,19 @@ body{
     .header {
       margin-top: 40vh;
     }
+    .empty2 {
+      margin-bottom: 130px;
+    }
   }
 
   @media (min-width: 1366px) {
     .header {
       margin-top: 29vh;
     }
+    .empty2 {
+      margin-bottom: 100px;
+    }
+    
   }
 
   @media (min-width: 1920px){
@@ -244,6 +257,10 @@ body{
   @media (max-width: 1365px) {
     .header {
       margin-top: 40vh;
+    }
+    .empty2 {
+      margin-bottom: 180px;
+      font-size: 9vh;
     }
   }
 
