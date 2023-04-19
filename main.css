@@ -59,7 +59,8 @@ body{
     .empty2{
      font-size: 3rem !important;
      margin-top: 19rem !important;
-     margin-bottom: 5rem !important;
+     /* margin-bottom: 1em !important; */
+     /* color: red !important; */
     }
 
 }
@@ -72,7 +73,6 @@ body{
   /* justify-content: center; */
   /* align-items: center; */
   overflow: hidden;
-  
   /* transform: translate(-50%, -50%); */
 }
 
@@ -82,11 +82,11 @@ body{
 }
 
 #image_container {
-  /* flex: 1 0 130px; */
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  display: flex;
+  flex: 1 0 130px;
+   flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center;   */
   max-width: 39%;
   /* max-height: 100vh; */
   /* font-size: 58px; */
@@ -102,7 +102,8 @@ body{
 
 #image_box {
   /* flex: 1 0 130px; */
-  display: flexbox;
+  /* display: flex; */
+  /* flex: 1; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -113,7 +114,7 @@ body{
   top: 50%;
   left: 49%;
   transform: translate(-50%, -50%);
-  overflow-y: scroll;
+  overflow: auto;
   margin: 20px;
   padding: 20px;
   z-index: 2;
@@ -134,16 +135,17 @@ body{
     flex: 1 1 130px;
     color: cornsilk;
     font-size: clamp(0.005rem, 2vw, 3rem);
-    margin-top: 30vh;
+    /* margin-top: 29vh; */
     align-items: center;
     text-align: center;
+    
   }
 
   .music {
     flex: 1 1 100%;
     color: cornsilk;
     /* flex: 1; */
-    margin-top: 65vh;
+    margin-top: 10em;
     font-size: clamp(0.1rem, 4vw, 5rem);
     align-items: center;
     text-align: center;
@@ -156,27 +158,28 @@ body{
   }
 
   .parag {
-    flex: 1 1 130px;
+    flex: 0 0 130px;
     color: cornsilk;
     max-width:max-content;
-    flex: 1;
+
+    margin-top: 7em;
     font-size: clamp(1rem, 6.2vw, 80rem);
-    /* height: 400px; */
-    margin-top: 60vh; 
+    height: auto;
+    
     text-align:justify;
 }
 
-.empty2{
-  height: 250px; 
-  margin-top: 80vh;
-  margin-bottom: 1vh;
-  font-size: 70px;
-  flex: 3;
-  color: cornsilk;
-  font-style: oblique;
-overflow-y: scroll;
-text-align: center;
-}
+  .empty2{
+    /* flex: 1; */
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+    font-size: 70px;
+    flex: 0 0 130px;
+    color: cornsilk; 
+    font-style: oblique;
+    overflow-y: scroll;
+    text-align: center;
+  }
 
 #tthew {
   text-align: center;
@@ -205,7 +208,7 @@ text-align: center;
   
   /* visited link */
   a:visited {
-    color: mediumaquamarine;
+    color: cornsilk;
   }
   
   /* mouse over link */
@@ -220,5 +223,87 @@ text-align: center;
     color: yellow;
   } 
   
+  @media (max-width: 768px) {
+    /* form {
+      display: block;
+    } */
+    .container {
+      
+      align-items: center !important;
+      
+    }
+  
+    #image_container {
+      min-width: 318px;
+      left: 44% !important;
+      
+    }
+  
+    #image_container img {
+      min-width: 318px;
+    }
+  
+    #image_box {
+      min-width: 318px;
+      left: 44% !important;
+      
+    }
+  
+    .header {
+      font-size: 1rem !important;
+      margin-top: 25em !important;
+    }
+  
+    .music {
+      font-size: 3rem !important;
+      
+    }
+  
+    .parag {
+      /* flex: 1; */
+      font-size: 3rem !important;
+      max-width: 19rem !important;
+  }
+  
+    .empty2{
+      font-size: 3rem !important;
+      margin-top: 19rem !important;
+      margin-bottom: 50rem !important;
+    }
+  
+  }
 
+  @media (max-width: 1920px) {
+    .header {
+      margin-top: 40vh;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .header {
+      margin-top: 29vh;
+    }
+  }
+
+  @media (min-width: 1920px){
+    .parag {
+      max-width: 66rem !important;
+      font-size: clamp(1rem, 4vw, 50rem) !important;
+    }
+    .header {
+      margin-top: 30vh;
+    }
+  }
+
+  @media (max-width: 1365px) {
+    .header {
+      margin-top: 40vh;
+    }
+  }
+
+  /* @media (max-width: 900px) {
+    .header {
+      margin-top: 30vh;
+    }
+  } */
   
